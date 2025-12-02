@@ -16,17 +16,21 @@
       </nav>
     </header>
 
+    <button id="scrollTopBtn" title="Retour en haut">↑</button>
+
+    <!-- HERO SECTION -->
     <section class="hero-section">
       <div>
-        <h1>Open Source & Logiciels Libres</h1>
+        <h1>Libérez la puissance de l’Open Source</h1>
         <p>
-          Nous accompagnons les entreprises dans la modernisation digitale, le
-          développement web, l’analyse de données et l’intégration de solutions
-          open source.
+          Des solutions performantes, sécurisées et évolutives pour accélérer la
+          transformation digitale de votre organisation.
         </p>
         <br />
-        <button class="btn btn-bleu">Commencer</button>
-        <button class="btn btn-white">En savoir plus</button>
+        <a href="services.html" class="btn btn-bleu">Découvrir nos services</a>
+        <a href="a-propos.html" class="btn btn-white"
+          >Pourquoi l’Open Source ?</a
+        >
       </div>
       <img src="assets/img/hero-img.png" alt="Illustration" width="380" />
     </section>
@@ -54,21 +58,143 @@
 
     <!-- MAIN -->
     <main class="main-wrapper">
-      <div class="container">
-        <h2>Bienvenue</h2>
-        <p>
-          EURL Badji Open Source accompagne les organisations dans la mise en
-          place de solutions libres, performantes et sécurisées.
-        </p>
+      <!-- SECTION BIENVENUE -->
+      <section class="container welcome-section">
+        <div class="welcome-container">
+          <h2>Bienvenue chez EURL Badji Open Source</h2>
 
-        <p>Nous intervenons sur :</p>
-        <ul>
-          <li>Linux & infrastructures</li>
-          <li>Virtualisation (Proxmox)</li>
-          <li>Stockage distribué (Ceph)</li>
-          <li>Orchestration (Kubernetes)</li>
-        </ul>
-      </div>
+          <p class="welcome-text">
+            Nous accompagnons les entreprises dans l’adoption de technologies
+            open source fiables, sécurisées et évolutives. Notre mission :
+            moderniser votre infrastructure, optimiser vos performances et vous
+            aider à gagner en autonomie technique.
+          </p>
+
+          <ul class="welcome-list">
+            <li>Transformation digitale basée sur le libre</li>
+            <li>Solutions performantes et sécurisées</li>
+            <li>Expertise certifiée sur les technologies open source</li>
+            <li>Support professionnel & accompagnement continu</li>
+          </ul>
+
+          <a href="a-propos.html" class="btn btn-bleu">En savoir plus</a>
+        </div>
+      </section>
+
+      <!-- SECTION EXPERTISES -->
+      <section class="expertises-section">
+        <div class="expertises-text">
+          <h2>Nos Expertises</h2>
+          <p class="expertises-intro">
+            Des solutions robustes, éprouvées et adaptées aux infrastructures
+            modernes.
+          </p>
+        </div>
+        <div class="expertises-grid">
+          <div class="expertise-card">
+            <h3>Infrastructure Linux</h3>
+            <p>
+              Installation, optimisation et sécurisation d'environnements Linux
+              pour garantir stabilité et performance.
+            </p>
+          </div>
+
+          <div class="expertise-card">
+            <h3>Virtualisation Proxmox</h3>
+            <p>
+              Déploiement de clusters, haute disponibilité et administration
+              avancée pour une gestion efficace de vos ressources.
+            </p>
+          </div>
+
+          <div class="expertise-card">
+            <h3>Stockage Ceph</h3>
+            <p>
+              Solutions de stockage distribuées, résilientes et hautement
+              évolutives pour les environnements critiques.
+            </p>
+          </div>
+
+          <div class="expertise-card">
+            <h3>Kubernetes</h3>
+            <p>
+              Orchestration moderne, automatisation, CI/CD et scalabilité pour
+              vos applications conteneurisées.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- POURQUOI NOUS CHOISIR -->
+      <section class="why-section">
+        <div class="why-section--text">
+          <h2>Pourquoi choisir Badji Open Source ?</h2>
+          <a href="a-propos.html" class="btn btn-white">En savoir plus</a>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <h3>✔ Expertise technique pointue</h3>
+            <p>
+              Plus de 10 ans d’expérience dans les technologies libres et
+              l’architecture d’infrastructure.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h3>✔ Solutions 100% open source</h3>
+            <p>
+              Pas de licences coûteuses : performance et indépendance
+              technologique garanties.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h3>✔ Accompagnement sur mesure</h3>
+            <p>
+              Chaque projet est adapté à vos besoins, votre budget et votre
+              niveau d’exigence.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h3>✔ Sécurité & haute disponibilité</h3>
+            <p>
+              Nous mettons en place des infrastructures robustes et résilientes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SERVICES  -->
+      <section class="services-preview">
+        <div class="services-preview--text">
+          <h2>Nos Services</h2>
+          <p class="services-intro">
+            Découvrez comment nous pouvons aider votre organisation à gagner en
+            performance.
+          </p>
+        </div>
+        <div class="services-preview-grid">
+          <div class="service-preview-card">
+            <h3>Installation & Déploiement</h3>
+            <p>Infrastructure Linux, clusters Proxmox, Kubernetes, Ceph.</p>
+          </div>
+
+          <div class="service-preview-card">
+            <h3>Audit & Sécurisation</h3>
+            <p>Optimisation, durcissement, surveillance et bonnes pratiques.</p>
+          </div>
+
+          <div class="service-preview-card">
+            <h3>Support & Maintenance</h3>
+            <p>Assistance technique, monitoring, résolution d'incidents.</p>
+          </div>
+        </div>
+
+        <div class="services-preview-button">
+          <a href="services.html" class="btn btn-bleu">Tous nos services</a>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->

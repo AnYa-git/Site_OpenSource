@@ -1,5 +1,11 @@
 const track = document.querySelector(".tech-track");
 
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+/* -------------------------------
+CARROUSEL INFINI
+--------------------------------- */
+
 // Cloner tous les items pour avoir un défilement infini
 track.innerHTML += track.innerHTML;
 
@@ -16,3 +22,24 @@ function animateCarousel() {
 }
 
 animateCarousel();
+
+/* -------------------------------
+BOUTON DE SCROLL VERS LE HAUT
+--------------------------------- */
+
+// Afficher le bouton après avoir scrollé
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+// Scroll en douceur vers le haut
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
