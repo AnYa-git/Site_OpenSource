@@ -400,6 +400,68 @@ h2::after {
   border-radius: var(--border-radius);
 }
 
+/* -----------------------------------
+   SECTION - Pourquoi l'Open Source
+-------------------------------------*/
+
+.why-open-source {
+  padding: 60px 40px 0;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.why-open-source .container {
+  margin: auto;
+  text-align: center;
+  background-color: var(--color-secondary);
+  box-shadow: var(--box-shadow);
+}
+
+.why-open-source h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+
+.why-intro {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  box-shadow: var(--box-shadow);
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+}
+
+.why-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  margin-bottom: 10px;
+  color: var(--color-secondary);
+}
+
+.why-card p {
+  color: var(--color-text);
+}
+
 /* ---------------------------
    EXPERTISES SECTIONS
 ----------------------------*/
