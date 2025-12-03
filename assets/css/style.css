@@ -342,9 +342,9 @@ h2::after {
    CARROUSEL TECHNOLOGIES
 ----------------------------*/
 .tech-carousel-section {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
+  width: 1200px;
+  margin: 10px auto;
+  padding: 10px;
   text-align: center;
 }
 
@@ -394,7 +394,7 @@ h2::after {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 40px 0;
+
   background: var(--color-bg);
 }
 
@@ -404,9 +404,60 @@ h2::after {
 
 .container {
   max-width: 1200px;
-  background-color: var(--color-white);
   box-shadow: var(--box-shadow);
   padding: 30px;
+  border-radius: var(--border-radius);
+}
+
+/* ---------------------------
+   SECTION GENERIQUE
+----------------------------*/
+
+section:not(.hero-section) {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+/* ---------------------------
+   WELCOME SECTION
+----------------------------*/
+.welcome-section {
+  padding: 40px;
+  margin-top: 10px;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+.welcome-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: var(--color-text);
+}
+
+.welcome-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.welcome-list li {
+  color: var(--color-text);
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid var(--color-secondary);
   border-radius: var(--border-radius);
 }
 
@@ -415,12 +466,15 @@ h2::after {
 -------------------------------------*/
 
 .why-open-source {
-  padding: 60px 40px 0;
   margin: auto;
-  max-width: 1200px;
-}
+  padding: 40px;
+  background: var(--color-primary);
+  display: flex;
+  flex-direction: column;
 
-.why-open-source .container {
+  margin: 100px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
   margin: auto;
   text-align: center;
   background-color: var(--color-primary);
@@ -523,47 +577,6 @@ h2::after {
 .expertise-card p {
   font-size: 16px;
   color: var(--color-white);
-}
-
-/* ---------------------------
-   WELCOME SECTION
-----------------------------*/
-.welcome-section {
-  padding: 60px 40px;
-  margin: auto;
-}
-
-.welcome-container {
-  text-align: center;
-}
-
-.welcome-container h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: var(--color-primary);
-}
-
-.welcome-text {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: var(--color-text);
-}
-
-.welcome-list {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  margin-bottom: 30px;
-  list-style-type: none;
-}
-
-.welcome-list li {
-  color: var(--color-text);
-  font-weight: bold;
-  text-align: center;
-  padding: 20px;
-  border: 3px solid var(--color-secondary);
-  border-radius: var(--border-radius);
 }
 
 /* ---------------------------
