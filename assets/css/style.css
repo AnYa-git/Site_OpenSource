@@ -36,16 +36,23 @@
 :root {
   /* Couleurs */
   --color-bg: #f4f4f4;
-  --color-primary: #1c4f8d;
-  --color-secondary: #317ac1;
+  /* --color-primary: #1c4f8d; */
+  --color-primary: #2764af;
+  --color-secondary: #288e89;
   --color-text: #222222;
   --color-white: #ffffff;
 
-  --gradient: linear-gradient(
+  /* --gradient: linear-gradient(
     90deg,
     rgba(28, 79, 141, 1) 0%,
     rgba(49, 122, 193, 1) 81%,
     rgba(28, 79, 141, 1) 100%
+  ); */
+
+  --gradient: linear-gradient(
+    90deg,
+    rgba(39, 100, 175, 1) 0%,
+    rgb(40, 142, 137) 90%
   );
 
   /* Polices */
@@ -68,7 +75,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   border-radius: var(--border-radius);
 }
 
@@ -126,7 +133,7 @@ body {
 
 /* Titres */
 h2 {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   margin-bottom: 30px;
   position: relative;
   display: inline-block;
@@ -141,13 +148,13 @@ h2::after {
   top: 0;
   width: 5px;
   height: 100%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   border-radius: 5px;
 }
 
 /* ---------- HEADER---------- */
 .header {
-  background: var(--gradient);
+  background-color: var(--color-primary);
   color: var(--color-white);
   padding: 20px 40px;
   display: flex;
@@ -183,7 +190,7 @@ h2::after {
 
 /* Hover */
 .menu-nav a:hover {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   transform: translateY(-2px); /* léger lift au survol */
 }
 
@@ -196,7 +203,7 @@ h2::after {
   bottom: 40px;
   right: 40px;
   z-index: 100;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   color: white;
   border: none;
   border-radius: 20px;
@@ -225,7 +232,7 @@ h2::after {
 ----------------------------*/
 .hero-page {
   min-height: 10vh;
-  background: var(--gradient);
+  background: var(--color-primary);
   padding: 80px 40px;
   display: flex;
   flex-direction: column;
@@ -253,7 +260,7 @@ h2::after {
 
 .hero-section {
   min-height: 80vh;
-  background: var(--gradient);
+  background: var(--color-primary);
   padding: 60px;
   display: flex;
   justify-content: space-between;
@@ -311,16 +318,19 @@ h2::after {
 .btn-bleu {
   background: var(--color-secondary);
   color: white;
+  transition: all 0.5s ease;
 }
 
 .btn-bleu:hover {
-  background: var(--color-primary);
+  background: var(--color-white);
+  color: var(--color-secondary);
 }
 
 .btn-white {
   background: white;
   border: 2px solid var(--color-secondary);
   color: var(--color-secondary);
+  transition: all 0.5s ease;
 }
 
 .btn-white:hover {
@@ -413,7 +423,7 @@ h2::after {
 .why-open-source .container {
   margin: auto;
   text-align: center;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   box-shadow: var(--box-shadow);
 }
 
@@ -470,14 +480,18 @@ h2::after {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 100px;
   max-width: 1200px;
 }
 
+.expertises-text {
+  text-align: center;
+}
 .expertises-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .expertises-intro {
@@ -495,7 +509,7 @@ h2::after {
 
 .expertise-card {
   padding: 30px;
-  background: var(--color-secondary);
+  background: var(--color-primary);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   text-align: left;
@@ -526,7 +540,7 @@ h2::after {
 .welcome-container h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .welcome-text {
@@ -556,7 +570,7 @@ h2::after {
    WHY SECTION
 ----------------------------*/
 .why-section {
-  background: var(--gradient);
+  background: var(--color-primary);
   display: flex;
   padding: 40px;
   margin: 100px;
@@ -618,7 +632,7 @@ h2::after {
 .services-preview--text h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .services-intro {
@@ -644,7 +658,7 @@ h2::after {
   align-items: center;
   text-align: center;
   gap: 15px;
-  border: 3px solid var(--color-primary);
+  border: 3px solid var(--color-secondary);
 }
 
 .services-preview-button {
@@ -659,7 +673,7 @@ h2::after {
 .footer {
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
-  background-color: var(--color-primary);
+  background: var(--color-primary);
   color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -834,7 +848,7 @@ hr {
 }
 
 .contact-form button:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 /* ---------------------------
@@ -914,7 +928,7 @@ hr {
 }
 
 .founder-info h3 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-bottom: 5px;
 }
 
